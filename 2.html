@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="d1"></p>
+    <label>enter number a </label>
+    <input type="number" id="i1">
+    <label>enter number b</label>
+    <input type="number" id="i2">
+    <button onclick="add()">Start addition</button>
+    <script>
+       
+        function add(){
+            n1=document.getElementById("i1").value
+            n2=document.getElementById("i2").value
+            let count=0
+            let s=setInterval(()=>{
+                n1=parseInt(n1)
+            n2=parseInt(n2)
+            console.log(n1)
+            console.log(n2)
+            obj=document.getElementById("d1")
+            obj.innerHTML=n1+n2
+            n1++
+            n2++
+            count++
+            if(count===5){
+                clearInterval(s)
+            }
+            },1000)
+            
+          
+        }
+    // let a=2
+    // let b=5
+    // setInterval(()=>{
+    //     document.getElementById("d1").innerHTML=++a + ++b
+    // },1000)
+    </script>
+</body>
+</html>

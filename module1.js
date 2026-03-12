@@ -1,0 +1,6 @@
+let fs=require('fs')
+fs.writeFileSync('hello.txt','how r u')
+var data=fs.readFileSync('hello.txt')
+console.log(data)
+console.log(data.toString())
+console.log("programme ended")

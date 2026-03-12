@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">
+    </p>
+    <button onclick="increase()">increase</button>
+    <button onclick="stop()">stop</button>
+    <script>
+        size=50
+        let test
+        function increase(){
+            clearInterval(test)
+            obj=document.getElementById('demo')
+            obj.innerHTML='hello'
+            obj.style.fontSize=size+'px'
+            test=setInterval(()=>{
+                if(size<=200){
+                size++
+            }
+            else clearInterval(test)
+            },1000)
+    }
+        function stop(){
+            clearInterval(test)
+        }
+    </script>
+</body>
+</html>
