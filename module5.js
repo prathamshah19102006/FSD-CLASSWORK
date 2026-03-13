@@ -1,0 +1,6 @@
+ fs=require('fs')
+ fs.writeFileSync('a.txt','{"name":"pqr","age":23}')
+ data=fs.readFileSync('a.txt','utf-8')
+console.log(data)
+ft=JSON.parse(data)
+console.log(ft.age)

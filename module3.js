@@ -1,10 +1,6 @@
-fs=require('fs')
-fs.writeFile('hello/data.txt','Async operation',function(err){
-    if(err){
-        console.log(err)
-    }
-    else{
-        console.log('operation completed')
-    }
-})
-//there is no hello folder so error
+fs = require('fs')
+fs.writeFileSync('a.txt', '0 1 -9 20 33')
+var data = fs.readFileSync('a.txt', 'utf-8')
+console.log(data)
+data2 = data.split(" ").sort((a,b)=>a-b)
+console.log(data2)

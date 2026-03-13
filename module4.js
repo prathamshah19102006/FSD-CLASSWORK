@@ -1,10 +1,14 @@
+const student=[
+    {
+        'name':'abc',
+        'age':25
+    },
+    {
+        'name':'pqr',
+        'age':30
+    }
+]
 fs=require('fs')
-fs.readFile('data.txt','utf-8',function(err,data){
-    if(err){
-        console.log(err)
-    }
-    else{
-        console.log(data.toString())
-    }
-})
-console.log('programme ended')
+fs.writeFileSync('student.txt',JSON.stringify(student))
+data=fs.readFileSync('student.txt','utf-8')
+console.log(data)

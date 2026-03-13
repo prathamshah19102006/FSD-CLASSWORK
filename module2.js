@@ -1,8 +1,16 @@
-let fs=require('fs')
-// fs.mkdirSync('b2')
-// fs.writeFileSync('b2/lec.txt','module')
-// fs.renameSync('b2/lec.txt','b2/lec2.txt')
-// var data=fs.readFileSync("b2/lec2.txt",'utf-8')
-// console.log(data)
-// fs.unlinkSync('b2/lec2.txt')
-// fs.rmdirSync('b2')
+fs=require('fs')
+fs.writeFile('Lec1.txt','JSON',(err)=>{
+    if(err) throw err
+    console.log('write operation done')
+// })
+fs.appendFile('Lec1.txt','we are student of 4th sem-branch',(err)=>{
+    if(err) throw err
+    console.log('append done')
+// })
+fs.readFile('Lec1.txt','utf-8',(err,data)=>{
+    if(err) throw err
+    console.log(data)
+ })
+})
+})
+ console.log('process end')
