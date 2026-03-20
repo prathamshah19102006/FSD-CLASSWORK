@@ -1,0 +1,5 @@
+// let d=require('./calc.js')
+// console.log(d(5,3))
+let {sum,sub}=require('./calc.js')
+console.log(sum(5,3))
+console.log(sub(5,3))
