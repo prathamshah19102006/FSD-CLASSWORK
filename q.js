@@ -1,3 +1,3 @@
 require('dotenv').config()
 console.log(process.env.PORT)
-console.log(process.env.ID_PASS)]
+console.log(process.env.ID_PASS)
